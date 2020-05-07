@@ -19,9 +19,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  activities: {
-    type: [],
-  },
 });
 
 userSchema.methods.generateToken = function () {

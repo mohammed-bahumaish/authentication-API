@@ -28,12 +28,3 @@ app.use("/user", userRoute);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("listening at ", port));
-
-if (process.env.NODE_ENV !== "production") {
-  const ngrok = require("ngrok");
-  const ngrokConnect = async () => {
-    const url = await ngrok.connect(port);
-    console.log(url);
-  };
-  ngrokConnect();
-}
