@@ -1,0 +1,24 @@
+{
+  "name": "AuthService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.12",
+    "ngrok": "^3.2.7",
+    "validator": "^13.0.0"
+  }
+}
