@@ -34,7 +34,7 @@ route.post("/login", async (req, res) => {
 });
 
 //return users info
-route.get("/user", auth, async (req, res) => {
+route.get("/", auth, async (req, res) => {
   const user = await UserModel.findById({ _id: req.user._id });
   res.header("token", user.generateToken()).send(user);
 });
